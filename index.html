@@ -37,7 +37,7 @@
                         </svg>
                     </label>
                     <!-- Navigation -->
-                    <ul>
+                    <ul id="pc-nav">
                         <li class="active">
                             <a href="#">Home</a>
                         </li>
@@ -50,6 +50,9 @@
                         <li>
                             <a href="#review">Reviews</a>
                         </li>
+                        <li class="show-on-mobile separate">
+                            <a href="#!">Sign Up</a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- Action -->
@@ -61,7 +64,7 @@
     </header>
 
     <!-- Tablet & Mobile Header -->
-    <header class="mobile-header show-on-mobile">
+    <header class="mobile-header">
         <!-- Checkbox -->
         <input type="checkbox" class="menu-checkbox" name="" id="menu-checkbox" hidden>
 
@@ -73,26 +76,18 @@
             <!-- Logo -->
             <img src="./assets/img/logo.svg" alt="Lesson.">
             <!-- Navigation -->
-            <ul>
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#courses">Courses</a>
-                </li>
-                <li>
-                    <a href="#price">Pricing</a>
-                </li>
-                <li>
-                    <a href="#review">Reviews</a>
-                </li>
-                <li class="hide-on-tablet separate">
-                    <a href="#!">Sign Up</a>
-                </li>
+            <ul id="mobile-nav">
+
             </ul>
+
+            <script>
+                const pcNav = document.querySelector('#pc-nav');
+                const mobileNav = document.querySelector('#mobile-nav');
+                mobileNav.innerHTML = pcNav.innerHTML
+            </script>
         </div>
     </header>
-    <main>
+    <main hidden>
         <!-- Hero -->
         <div class="hero">
             <div class="main-content">
@@ -476,7 +471,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
         <div class="main-content">
             <div class="row">
                 <!-- Column 1 -->
