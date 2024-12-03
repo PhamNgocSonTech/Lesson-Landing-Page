@@ -81,6 +81,24 @@
   .separate {
     border-top: 1px solid #ffb900;
   }
+
+  /* Hero */
+  .hero .media-block {
+    display: none;
+  }
+
+  .hero .content-block {
+    width: 100%;
+    padding: 70px 0 0 40px;
+  }
+
+  .features .images {
+    flex-direction: column;
+  }
+
+  .features .body {
+    justify-content: space-evenly;
+  }
 }
 
 /* Tablet */
