@@ -16,10 +16,12 @@
         rel="stylesheet">
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Lesson Page</title>
 </head>
 
 <body>
+    <!-- PC Header -->
     <header class="header fixed">
         <div class="main-content">
             <div class="body">
@@ -27,6 +29,14 @@
                 <img src="./assets/img/logo.svg" alt="Lesson." class="logo">
                 <!-- Nav -->
                 <nav class="nav">
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path fill="currentColor"
+                                d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                            </path>
+                        </svg>
+                    </label>
+                    <!-- Navigation -->
                     <ul>
                         <li class="active">
                             <a href="#!">Home</a>
@@ -49,7 +59,40 @@
             </div>
         </div>
     </header>
-    <main>
+
+    <!-- Tablet & Mobile Header -->
+    <header class="mobile-header show-on-mobile">
+        <!-- Checkbox -->
+        <input type="checkbox" class="menu-checkbox" name="" id="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu Drawer Content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <img src="./assets/img/logo.svg" alt="Lesson.">
+            <!-- Navigation -->
+            <ul>
+                <li class="active">
+                    <a href="#!">Home</a>
+                </li>
+                <li>
+                    <a href="#!">Courses</a>
+                </li>
+                <li>
+                    <a href="#!">Pricing</a>
+                </li>
+                <li>
+                    <a href="#!">Reviews</a>
+                </li>
+                <li class="hide-on-tablet separate">
+                    <a href="#!">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main hidden>
         <!-- Hero -->
         <div class="hero">
             <div class="main-content">
@@ -433,7 +476,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
         <div class="main-content">
             <div class="row">
                 <!-- Column 1 -->
