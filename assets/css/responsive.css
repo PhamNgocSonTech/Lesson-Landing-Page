@@ -106,16 +106,153 @@
   .show-on-mobile {
     display: none;
   }
+
+  .footer .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+  }
+
+  .footer .row .column,
+  .footer .row .column:first-child {
+    width: 100%;
+  }
 }
 
 /* Mobile  */
 @media screen and (max-width: 767px) {
+  .main-content {
+    max-width: calc(100% - 60px);
+  }
   .menu-drawer {
     padding: 40px;
     inset: 0 35% 0 0;
   }
   .header .action {
     display: none;
+  }
+
+  .heading.lv1 {
+    font-size: 5.2rem;
+  }
+
+  .heading.lv2 {
+    font-size: 3.5rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+  }
+
+  .hero .content-block {
+    padding: 50px 0 0 30px;
+  }
+
+  .hero .desc {
+    font-size: 1.6rem;
+  }
+
+  .hero-cta {
+    min-width: 135px;
+  }
+
+  .hero .watch-video span {
+    font-size: 1.4rem;
+  }
+
+  .hero .stats strong {
+    font-size: 3.5rem;
+  }
+
+  .popular-top .desc {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .popular-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular .courses-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .popular .course-item .info {
+    padding: 16px 12px 22px;
+  }
+  /* 
+  .popular .course-item .desc {
+    font-size: 1.5rem;
+  } */
+
+  .info {
+    text-align: center;
+  }
+
+  .feedback-item .info .title {
+    font-size: 2rem;
+  }
+
+  .feedback-item .info .desc {
+    font-size: 1.1rem;
+  }
+
+  .feedback-item .content {
+    font-size: 1.4rem;
+  }
+
+  .feedback-item .dots {
+    justify-content: center;
+  }
+
+  .features .body {
+    flex-direction: column-reverse;
+    /* justify-content: space-between; */
+  }
+
+  .features .images img {
+    width: auto;
+  }
+
+  .features .content {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .features-2nd .images img {
+    /* display: none; */
+    margin-top: 50px;
+  }
+
+  .blog .blog-top .desc {
+    width: 100%;
+  }
+
+  .blog .blog-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* overflow: hidden; */
+  }
+
+  .blog .item {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 30px 12px 0;
+  }
+
+  .footer .row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+
+  .footer .row .column,
+  .footer .row .column:first-child {
+    width: 100%;
   }
 }
 
