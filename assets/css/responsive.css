@@ -258,4 +258,28 @@
 
 /* Mobile XSmall*/
 @media screen and (max-width: 576px) {
+  .heading.lv1 {
+    font-size: 4.2rem;
+  }
+
+  .hero-cta {
+    min-width: 120px;
+    line-height: 50px;
+  }
+
+  .hero .watch-video span {
+    font-size: 1.1rem;
+  }
+
+  .hero .stats strong {
+    font-size: 2.6rem;
+  }
+
+  .popular {
+    margin-top: 80px;
+  }
+
+  .features {
+    margin-top: 0;
+  }
 }
