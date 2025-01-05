@@ -107,10 +107,19 @@
     display: none;
   }
 
+  .heading.lv2 {
+    font-size: 3rem;
+  }
+
+  .footer {
+    padding: 80px 50px 0;
+  }
+
   .footer .row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 40px;
   }
 
   .footer .row .column,
@@ -281,5 +290,9 @@
 
   .features {
     margin-top: 0;
+  }
+
+  .blog .item .title a {
+    font-size: 1.5rem;
   }
 }
